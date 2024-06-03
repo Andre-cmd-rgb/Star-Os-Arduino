@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\andre\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_portenta\\4.1.3\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\andre\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed_portenta\\4.1.3\\variants\\PORTENTA_H7_M7"
+  },
+  {
+    "Sourcefile": "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\build\\sketch\\StarOs_Bootloader.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
