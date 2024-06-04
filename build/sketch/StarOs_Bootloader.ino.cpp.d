@@ -174,4 +174,5 @@ C:\Users\andre\Documents\Coding\ Projects\Arduino\ and\ Esp32\Star\ Os\build\ske
  C:\Users\andre\AppData\Local\Arduino15\packages\arduino\hardware\mbed_portenta\4.1.3\cores\arduino/Arduino.h \
  C:\Users\andre\AppData\Local\Arduino15\packages\arduino\hardware\mbed_portenta\4.1.3\cores\arduino/api/HardwareSerial.h \
  C:\Users\andre\AppData\Local\Arduino15\packages\arduino\hardware\mbed_portenta\4.1.3\cores\arduino/timer.h \
- C:\Users\andre\AppData\Local\Arduino15\packages\arduino\hardware\mbed_portenta\4.1.3\cores\arduino/overloads.h
+ C:\Users\andre\AppData\Local\Arduino15\packages\arduino\hardware\mbed_portenta\4.1.3\cores\arduino/overloads.h \
+ C:\Users\andre\Documents\Coding\ Projects\Arduino\ and\ Esp32\Star\ Os\build\sketch\kernel.h

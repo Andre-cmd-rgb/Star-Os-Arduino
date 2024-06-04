@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include "kernel.h"
 
 // Define the bootloader version
 const float Bootloader_Version = 1.0;
@@ -25,9 +26,13 @@ void setup() {
     Init_Serial();
     Serial.print("Bootloader Version: ");
     Serial.println(Bootloader_Version);
+
+    // Initialize the kernel
+    Init_Kernel();
 }
 
-// Arduino loop function (empty for bootloader)
+// Arduino loop function
 void loop() {
-    // Bootloader code typically does not use the loop function
+    // Run the kernel loop
+    Kernel_Loop();
 }

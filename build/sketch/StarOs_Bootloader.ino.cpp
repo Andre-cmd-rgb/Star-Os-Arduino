@@ -1,5 +1,6 @@
 #line 1 "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\Src\\StarOs_Bootloader\\StarOs_Bootloader.ino"
 #include <Arduino.h>
+#include "kernel.h"
 
 // Define the bootloader version
 const float Bootloader_Version = 1.0;
@@ -11,13 +12,13 @@ const long SERIAL_BAUD_RATE = 9600;
 const bool WAIT_FOR_SERIAL = true;
 
 // Function to initialize serial communication
-#line 13 "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\Src\\StarOs_Bootloader\\StarOs_Bootloader.ino"
+#line 14 "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\Src\\StarOs_Bootloader\\StarOs_Bootloader.ino"
 void Init_Serial();
-#line 24 "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\Src\\StarOs_Bootloader\\StarOs_Bootloader.ino"
+#line 25 "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\Src\\StarOs_Bootloader\\StarOs_Bootloader.ino"
 void setup();
-#line 31 "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\Src\\StarOs_Bootloader\\StarOs_Bootloader.ino"
+#line 35 "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\Src\\StarOs_Bootloader\\StarOs_Bootloader.ino"
 void loop();
-#line 13 "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\Src\\StarOs_Bootloader\\StarOs_Bootloader.ino"
+#line 14 "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\Src\\StarOs_Bootloader\\StarOs_Bootloader.ino"
 void Init_Serial() {
     Serial.begin(SERIAL_BAUD_RATE);
     if (WAIT_FOR_SERIAL) {
@@ -33,10 +34,14 @@ void setup() {
     Init_Serial();
     Serial.print("Bootloader Version: ");
     Serial.println(Bootloader_Version);
+
+    // Initialize the kernel
+    Init_Kernel();
 }
 
-// Arduino loop function (empty for bootloader)
+// Arduino loop function
 void loop() {
-    // Bootloader code typically does not use the loop function
+    // Run the kernel loop
+    Kernel_Loop();
 }
 

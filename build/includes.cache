@@ -13,5 +13,10 @@
     "Sourcefile": "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\build\\sketch\\StarOs_Bootloader.ino.cpp",
     "Include": "",
     "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\andre\\Documents\\Coding Projects\\Arduino and Esp32\\Star Os\\build\\sketch\\Kernel.cpp",
+    "Include": "",
+    "Includepath": null
   }
 ]
